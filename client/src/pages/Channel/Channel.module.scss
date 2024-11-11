@@ -1,0 +1,64 @@
+.channel {
+    height: 100%;
+    .banner {
+        width: calc(100% + 12px);
+        overflow-y: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .container {
+        width: calc(100% + 12px);
+        height: 100%;
+        padding: 24px 82px 0 82px;
+        .header {
+            position: relative;
+            display: flex;
+            
+            .avatar {
+                width: 128px;
+                height: 128px;
+                margin: 0 24px 12px;
+                img{
+                    border-radius: 50%;
+                    height: 100%;
+                }
+            }
+            .header-container {
+                flex: 1;
+                display: flex;
+                .info {
+                    flex: 1;
+                    span + span,
+                    span + a {
+                        margin-left: 12px;
+                    }
+                }
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                left: -82px;
+                bottom: 0;
+                height: 2px;
+                width: calc(100% + 164px);
+                display: block;
+                background-color: var(--btn-background-color-active);
+            }
+        }
+        .content {
+            width: 100%;
+            .nav {
+                position: relative;
+                width: calc(100% + 12px);
+                z-index: 100;
+                top: calc((--header-height) + 20px);
+                transition: all ease .3s;
+                background-color: var(--primary-color-black);
+                .Navbar {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

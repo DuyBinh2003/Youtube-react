@@ -1,0 +1,29 @@
+.SubscriptionsPage {
+  height: 100%;
+  padding-top: var(--subcription-padding-top);
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: var(--subcription-nav-height);
+    font-size: 16px;
+    div {
+      display: flex;
+      align-items: center;
+      .nav-link {
+        display: block;
+        padding: 0 16px;
+        border-radius: 20px;
+        color: #3ea6ff;
+        line-height: 36px;
+        text-decoration: none;
+
+        &:hover {
+          background-color: #263850;
+        }
+      }
+    }
+  }
+  .content {
+  }
+}

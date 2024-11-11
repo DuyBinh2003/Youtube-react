@@ -1,0 +1,39 @@
+.library-page {
+    height: 100%;
+    width: 100%;
+    .wrapper {
+        height: 100%;
+        width: 100%;
+        padding: 24px 105px;
+        header {
+            display: flex;
+            .img {
+                img {
+                    height: 120px;
+                    border-radius: 50%;
+                }
+            }
+            .info {
+                flex: 1;
+                margin-left: 24px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                h4 {
+                    font-size: 3.6rem;
+                    line-height: 36px;
+                    margin: 0;
+                }
+                span {
+                    font-size: 1.2rem;
+                }
+                span + span {
+                    margin-left: 12px;
+                }
+                .btn {
+                    display: flex;
+                }
+            }
+        }
+    }
+}

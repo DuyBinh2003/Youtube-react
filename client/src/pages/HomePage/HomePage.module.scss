@@ -1,0 +1,18 @@
+.HomePage {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  nav {
+    position: absolute;
+    height: 56px;
+    width: calc(100% - 12px);
+    padding-left: 20px;
+    left: 0;
+    background-color: var(--primary-color-black);
+    z-index: 1000;
+  }
+  .content {
+    padding-top: var(--home-content-padding-top);
+    height: calc(100vh - var(--header-height));
+  }
+}

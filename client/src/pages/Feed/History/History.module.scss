@@ -1,0 +1,50 @@
+.history-page {
+    height: 100%;
+    width: 100%;
+    .wrapper {
+        height: 100%;
+        width: 100%;
+        padding: 24px 105px;
+        h1 {
+            font-size: 3.6rem;
+            padding-bottom: 24px;
+        }
+        .container {
+            display: flex;
+            .content {
+                flex: 3;
+            }
+            .action {
+                flex: 2;
+                display: flex;
+                justify-content: end;
+                .action-wrapper {
+                    width: fit-content;
+                    .input {
+                        width: 100%;
+                        display: flex;
+                        border-bottom: solid 1px var(--text-color-sub);
+                        input {
+                            margin-left: 4px;
+                            font-size: 1.6rem;
+                            color: var(--primary-color-white);
+                            background-color: transparent;
+                            border: none;
+                            outline: none;
+                        }
+                    }
+                    .text {
+                        padding-left: 48px;
+                        p + p {
+                        margin-top: 10px;
+                        }
+                    }
+                    div + div {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+    }
+   
+}

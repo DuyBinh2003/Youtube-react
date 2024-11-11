@@ -1,0 +1,14 @@
+.Header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: block;
+  z-index: 100;
+  height: var(--header-height);
+  padding: var(--default-layout-padding);
+  background-color: var(--primary-color-black);
+  color: var(--primary-color-white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

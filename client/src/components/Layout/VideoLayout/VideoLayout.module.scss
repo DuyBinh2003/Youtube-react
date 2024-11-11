@@ -1,0 +1,36 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: var(--primary-color-black);
+  color: var(--primary-color-white);
+  padding-top: var(--header-height);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--primary-color-black-modal);
+}
+
+.modalSidebar {
+  position: fixed;
+  width: calc(var(--sidebar-width) - 24px);
+  padding-top: var(--header-height);
+  height: 100%;
+  transform: translatex(-100%);
+  transition: all linear 0.3s;
+  background-color: var(--primary-color-black);
+  color: var(--primary-color-white);
+}
+.modal.active {
+  display: block;
+}
+.modalSidebar.active {
+  transform: translatex(0);
+}

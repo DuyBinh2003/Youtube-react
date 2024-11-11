@@ -1,0 +1,26 @@
+.defaultSidebar {
+  height: 100%;
+  margin: 0;
+  padding-left: var(--default-layout-sidebar-padding-left);
+  display: flex;
+  flex-direction: column;
+}
+
+.subSidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: var(--sub-sidebar-padding);
+  .link {
+    text-decoration: none;
+    color: var(--primary-color-white);
+  }
+}
+@media (max-width: 1500px) {
+  .defaultSidebar {
+    display: none;
+  }
+  .subSidebar {
+    display: block;
+  }
+}

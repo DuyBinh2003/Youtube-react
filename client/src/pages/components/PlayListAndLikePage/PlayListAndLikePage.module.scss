@@ -1,0 +1,36 @@
+.page {
+  padding-left: 12px;
+  height: 100%;
+  display: flex;
+  .play-list {
+    width: 360px;
+    height: 100%;
+    padding: 24px;
+    margin-right: 8px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(67,72,89,0.800) 0%, rgba(67,72,89,0.298) 33%, rgba(15,15,15,1.000) 100%);
+    .img {
+      width: 100%;
+      img{
+        border-radius: 10px;
+        width: 100%;
+      }
+    }
+    .info {
+      span {
+        margin-right: 4px;
+        font-size: 12px;
+      }
+    }
+    .btn {
+      display: flex;
+      margin-top: 12px;
+    }
+  }
+  .content {
+    height: 100%;
+    flex: 1;
+  }
+}
+
+

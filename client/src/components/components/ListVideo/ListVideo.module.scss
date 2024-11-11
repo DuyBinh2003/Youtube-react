@@ -1,0 +1,30 @@
+.grid-content, 
+.grid-download-content,
+.grid-channel-content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px 16px;
+  h6 {
+    margin: 12px 0 4px;
+  }
+  p,
+  span{
+    font-size: 1.4rem;
+  }
+}
+.flex-content {
+  display: flex;
+  flex-direction: column;
+}
+.grid-download-content {
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px 4px;
+  h6 {
+    margin: 4px 0 6px;
+  }
+  p,
+  span{
+    font-size: 1.2rem;
+  }
+}

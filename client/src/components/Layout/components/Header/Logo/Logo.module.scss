@@ -1,0 +1,18 @@
+.Logo {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  img {
+    padding: 0 16px;
+    height: var(--logo-img-height);
+  }
+  span {
+    text-decoration: none;
+    color: var(--text-color-sub);
+    position: absolute;
+    right: -4px;
+    top: 4px;
+  }
+}

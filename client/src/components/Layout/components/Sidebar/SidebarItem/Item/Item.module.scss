@@ -1,0 +1,41 @@
+.Link {
+  text-decoration: none;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: 500;
+  color: var(--primary-white);
+  .Item {
+    width: 204px;
+    height: 40px;
+    padding: 0 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      background-color: var(--btn-background-color-active);
+    }
+    .img {
+      width: 24px;
+      height: 24px;
+      img {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+      }
+    }
+    span {
+      color: var(--primary-white);
+      margin-left: 24px;
+      flex: 1;
+    }
+  }
+
+  .Item.active {
+    background-color: var(--btn-background-color-active);
+    &:hover {
+      background-color: var(--btn-background-color-active-hover);
+    }
+  }
+}

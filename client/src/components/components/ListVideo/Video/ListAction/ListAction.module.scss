@@ -1,0 +1,15 @@
+.Wrapper {
+  ul {
+    padding: 8px 0;
+    li {
+      display: flex;
+      list-style: none;
+    }
+    &:last-child {
+      border-top: 1px solid var(--text-color-sub);
+    }
+    &:first-child {
+      border-top: none;
+    }
+  }
+}

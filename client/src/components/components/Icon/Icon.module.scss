@@ -1,0 +1,16 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  svg {
+    path {
+      fill: var(--primary-color-white);
+    }
+  }
+}
+.icon.white {
+  svg {
+    path {
+      fill: var(--primary-color-black);
+    }
+  }
+}

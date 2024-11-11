@@ -1,0 +1,107 @@
+.Button {
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 8px;
+  span {
+    color: var(--primary-color-white);
+  }
+  &:hover {
+    background-color: var(--btn-background-color-active);
+  }
+}
+.Button.size-s {
+  width: 36px;
+  height: 36px;
+  padding: 6px;
+}
+.Button.textAndIcon,
+.Button.text {
+  height: fit-content;
+  width: fit-content;
+  border-radius: 20px; 
+}
+.Button.text {
+  padding: 6px 16px;
+  text-align: center;
+}
+.Button.textAndIcon {
+  display: flex;
+  align-items: center;
+  padding: 6px 10px;
+  span {
+    flex: 1;
+    margin-left: 12px;
+  }
+}
+.Button.noBorder {
+  width: 100%;
+  border-radius: 0;
+  span {
+    font-size: 14px;
+  }
+}
+.white {
+  background-color: var(--primary-color-white);
+  span {
+    color: var(--primary-color-black);
+  }
+  &:hover {
+    background-color: var(--primary-color-white-hover);
+  }
+}
+.blue {
+  background-color: transparent;
+  span {
+    color: var(--color-link);
+  }
+  &:hover {
+    background-color: #263850;
+  }
+}
+.sub-cmt {
+  background-color: #3ea6ff;
+  span {
+    color: var(--primary-color-black);
+  }
+  &:hover {
+    background-color: #65b8ff;
+  }
+}
+.Button.square {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+  height: var(--sub-sidebar-button-height);
+  width: var(--sub-sidebar-button-width);
+  border-radius: var(--sub-sidebar-button-border-radius);
+  padding: var(--sub-sidebar-button-padding);
+  span {
+    text-align: center;
+    font-size: 10px;
+    margin: 0;
+  }
+}
+.Button.default {
+  background-color: var(--btn-background-color-active);
+  span {
+      color: var(--primary-color-white);
+  }
+  &:hover {
+      background-color: var(--btn-background-color-active-hover);
+  }
+}
+.Button + .Button {
+  margin-left: 12px;
+}
+.disable {
+  cursor: default;
+  color: var(--btn-disable-color);
+  background-color: var(--btn-disable-background-color);
+  &:hover {
+    background-color: var(--btn-disable-background-color);
+  }
+}

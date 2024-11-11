@@ -1,0 +1,36 @@
+.trending-page {
+    height: 100%;
+    width: 100%;
+    .wrapper {
+        height: 100%;
+        width: 100%;
+        .header{ 
+            height: 144px;
+            width: 100%;
+            border-bottom: 2px solid var(--btn-background-color-active-hover);
+            padding: 0 84px;
+            header {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                padding-top: 24px;
+                img {
+                    width: 72px;
+                    border-radius: 50%;
+                }
+                h3 {
+                    font-size: 3.6rem;
+                    margin-left: 12px;
+                }
+            }
+            nav {
+                background-color: var(--primary-color-black);
+            }
+        }
+        .container {
+            width: 946px;
+            padding-left: 84px;
+            margin-top: 24px;
+        }
+    }
+}

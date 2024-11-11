@@ -1,0 +1,10 @@
+.Sidebar-item {
+  padding: 12px 0;
+  border-bottom: var(--btn-background-color-active) 2px solid;
+
+  .title {
+    padding-left: 12px;
+    margin-bottom: 4px;
+    font-size: 1.4rem;
+  }
+}

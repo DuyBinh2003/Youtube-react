@@ -1,0 +1,89 @@
+.Search {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--text-color-sub);
+  .search-box {
+    height: var(--search-box-height);
+    width: var(--search-box-width);
+    padding: 0 4px;
+    margin: 0 16px 0 40px;
+    display: flex;
+    align-items: center;
+    .input-wrapper {
+      flex: 1;
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: var(--input-wrapper-margin-left);
+      padding: var(--input-wrapper-padding);
+      border: 1px solid var(--btn-background-color-active);
+      border-top-left-radius: 40px;
+      border-bottom-left-radius: 40px;
+      cursor: text;
+      input {
+        flex: 1;
+        height: 100%;
+        background-color: transparent;
+        border: none;
+        font-size: 1.6rem;
+        color: var(--primary-color-white);
+        &:focus {
+          outline: none;
+        }
+      }
+      img {
+        padding: 8px;
+        cursor: pointer;
+      }
+      .search-button-left {
+        position: absolute;
+        display: none;
+        top: -1px;
+        left: -40px;
+        border: 1px solid var(--border-search-box-color);
+        border-right: none;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+      }
+
+      &:focus-within {
+        border-color: var(--border-search-box-color);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-left: none;
+        .search-button-left {
+          display: flex;
+        }
+      }
+    }
+    .search-button-right,
+    .search-button-left {
+      height: 40px;
+      width: 62px;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .search-button-icon {
+        width: 24px;
+        height: 24px;
+        svg {
+          path {
+            fill: var(--primary-color-white);
+            stroke: var(--text-color-sub);
+          }
+        }
+      }
+    }
+    .search-button-right {
+      border: 1px 1px 1px 0 solid var(--btn-background-color-active);
+      border-top-right-radius: 30px;
+      border-bottom-right-radius: 30px;
+      background-color: var(--btn-background-color-active);
+    }
+  }
+}

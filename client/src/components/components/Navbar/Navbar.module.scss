@@ -1,0 +1,43 @@
+.Navbar {
+  .nav-container {
+    display: flex;
+    .nav-item {
+      display: block;
+      margin: var(--home-nav-margin);
+      padding: var(--home-nav-padding);
+      line-height: var(--home-nav-line-height);
+      cursor: pointer;
+      transition: all linear 0.3s;
+    }
+
+    // Home page nav
+    .nav-item.default {
+      font-size: 1.4rem;
+      border-radius: var(--home-nav-border-radius);
+      background-color: var(--nav-background-color);
+      color: var(--nav-text-color);
+      &:hover {
+        background-color: var(--nav-background-color-hover);
+      }
+    }
+    .nav-item.default.active {
+      background-color: var(--nav-background-color-active);
+      color: var(--nav-text-color-active);
+    }
+
+    // border bottom nav
+    .nav-item.border-bottom {
+      font-size: 1.6rem;
+      margin: 0 24px 0 0;
+      padding: 6px 0;
+      color: var(--text-color-sub);
+      &:hover {
+        border-bottom: 2px solid var(--btn-background-color-active-hover);
+      }
+    }
+    .nav-item.border-bottom.active {
+      color: var(--priamry-color-white);
+      border-bottom: 2px solid #f1f1f1;
+    }
+  }
+}

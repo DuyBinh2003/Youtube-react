@@ -1,0 +1,58 @@
+.Comment-wrapper {
+    margin-top: 40px;
+    width: 100%;
+    .avatar {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 16px;
+        img {
+            width: 100%;
+        }
+    }
+    .list-comment {
+        list-style: none;
+        .item {
+            display: flex;
+            .content {
+                flex: 1;
+                h5 {
+                    font-size: 1.4rem;
+                }
+                .title {
+                    font-size: 1.3rem;
+                }
+                .like-btn {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+            .btn {
+                display: none;
+                height: fit-content;
+            }
+            .btn.active {
+                display: block;
+            }
+            .menu {
+                width: 150px;
+            }
+            &:hover .btn{
+                display: block;
+            }
+        }
+    }
+}
+.Wrapper {
+    ul {
+        padding: 8px 0;
+        li {
+            display: flex;
+            list-style: none;
+        }
+    }
+}

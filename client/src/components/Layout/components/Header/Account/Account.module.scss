@@ -1,0 +1,15 @@
+.Account {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--text-color-sub);
+  img {
+    cursor: pointer;
+    margin: 0 12px;
+    width: var(--account-img-size);
+    height: var(--account-img-size);
+    border-radius: 50%;
+  }
+}

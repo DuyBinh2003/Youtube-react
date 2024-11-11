@@ -1,0 +1,38 @@
+.avatar {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 16px;
+    img {
+        width: 100%;
+    }
+}
+.user-comment {
+    display: flex;
+    margin-bottom: 24px;
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        flex: 1;
+        input {
+            width: 100%;
+            background-color: transparent;
+            outline: none;
+            border: none;
+            padding: 8px 0;
+            font-size: 1.4rem;
+            border-bottom: solid 1px var(--text-color-sub);
+            color: var(--primary-color-white);
+            &:focus {
+                border-color: var(--primary-color-white);
+            }
+        }
+        .input-btn {
+            display: flex; 
+            margin-top: 12px;
+            width: fit-content;
+        }
+    }
+}
